@@ -82,7 +82,14 @@ int main() {
     srand(time(0));  // Seed for random numbers (using current time)
     
     // List of words to choose the secret from
-    vector<string> words = {"programare", "calculator", "C++", "variabila", "functie"};
+    vector<string> words = {"programare", "calculator", "C++", "variabila", "functie", 
+                            "algoritm", "internet", "software", "hardware", "database",
+                            "securitate", "criptografie", "interfata", "monitor", "procesator",
+                            "memoria", "tastatura", "mouse", "imprimanta", "scaner",
+                            "telefon", "pereche", "carnet", "scaun", "masa", "biblioteka",
+                            "dinamica", "structura", "iteratie", "recursie", "compilator",
+                            "debug", "eroare", "succes", "integrare", "migrare",
+                            "implementare", "documentatie", "testare", "optimizare", "scalabilitate"};
     
     // Choose a random word from the list
     string secret = words[rand() % words.size()];  // rand() % size = random index between 0 and size-1
